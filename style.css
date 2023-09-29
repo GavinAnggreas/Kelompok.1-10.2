@@ -1,0 +1,191 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@media only screen and (max-width : 992px){}
+@media only screen and (max-width : 768px){}
+@media only screen and (max-width : 600px){}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2, h1{
+    font-family: 'Lora', serif;
+}
+h1{
+    font-weight: 1000;
+}
+p, a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0 0 2rem white;
+}
+
+body{
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    /* background: linear-gradient(to right bottom, red, white); */
+    background-image: linear-gradient(to right, #4c0303, #580204, #640105, #700004, #7c0003, #8a090a, #981210, #a61a15, #ba2823, #ce3632, #e24341, #f75050);
+    /* background-image: linear-gradient(to right bottom, #771010, #820e0f, #8d0c0d, #99080a, #a40506, #af0304, #bb0202, #c60000, #d40000, #e20000, #f00000, #ff0000); */
+    background-size: 400% 400%;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-image: linear-gradient(to right, #4c0303, #580204, #640105, #700004, #7c0003, #8a090a, #981210, #a61a15, #ba2823, #ce3632, #e24341, #f75050);
+    background-size: 400% 400%;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+}
+div.logo{
+    display: flex;
+    align-items: center;
+}
+nav .logo p{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    font-size: 3vw;
+    margin: 0;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 2rem white;
+    color: white;
+}
+.gradient{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    height: 1rem;
+    width: 101%;
+    background: linear-gradient(to top,rgba(0,0,0,0), white,rgb(134, 9, 9))
+}
+div.banner{
+    background-image: url(KELOMPOK_1_1.png);
+    /* background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.151), rgba(134, 9, 9, 0.342)),
+    url('KELOMPOK_1_1.png'); */
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    --size: 100vw;
+    position: relative;
+    width: var(--size);
+    height: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.gradient-banner{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0,0), var(red));
+}
+div.video{
+    display: block;
+    /* height: 35vw; */
+    margin-left: 1vw;
+    border: 2px solid white;
+    box-shadow: 0 0 5rem white;
+    margin-bottom: 4vw;
+    width: 97.9%;
+}
+.video p{
+    font-size: 20pt;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+section.content{
+    padding: 20px;
+    /* height: 100%; */
+}
+div.pertanyaan h1{
+    /* position: absolute; */
+    margin-top: 2.vw;
+    /* left: 40pt; */
+    color: white;
+    font-size: 3vw;
+}
+div.box{
+    display: block;
+    /* height: 35vw; */
+    padding: 15pt;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem white;
+    /* width: 100%; */
+}
+div.box h2{
+    color: white;
+    font-size: 2vw;
+    margin-top: 1.5vw;
+}
+div.box h3{
+    margin-top: 1.4vw;
+    color: yellow;
+    font-size: 1.5vw;
+}
+div.logo a:hover{
+    text-decoration: underline;
+    /* font-weight: bold; */
+}
+div.logo a{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 2.5vw;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 0 0 2rem white;
+}
+div.pemisah{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 74vw;
+    flex-direction:row ;
+    margin-right: 0.5rem;
+}
+
+div.penutup{
+    position: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 10vw;
+    color: white;
+    text-shadow: white;
+}
+div.penutup p{
+    font-family: 'Dancing Script', cursive;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
